@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="juggler1" class ="com.springinaction.springdoi.Juggler">
+</bean>
+
+<bean id="juggler2" class ="com.springinaction.springdoi.Juggler">
+<constructor-arg value="15"></constructor-arg>
+</bean>
+
+
+<bean id="poem" class="com.springinaction.springdoi.Poem"></bean>
+
+
+<bean id="poetic1" class="com.springinaction.springdoi.PoeticJuggler">
+<constructor-arg ref="poem"></constructor-arg>
+</bean>
+
+<bean id="poetic2" class="com.springinaction.springdoi.PoeticJuggler">
+<constructor-arg value="12"></constructor-arg>
+<constructor-arg ref="poem"></constructor-arg>
+</bean>
+
+
+</beans>
