@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id="drawShape" class="com.spring.draw">
+			<constructor-arg ref="shape">
+	</bean>
+	
+	<bean id="shape" class="com.spring.shape.Circle">
+	</bean>	
+		
+	</xml>
