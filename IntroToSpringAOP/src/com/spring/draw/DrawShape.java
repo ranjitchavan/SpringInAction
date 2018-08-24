@@ -14,16 +14,14 @@ public class DrawShape {
 	}
 	
 	
-	public void paint(Shape shape){
+	public void paint(){
 		shape.draw();
 	}
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		
-		ApplicationContext context=new ClassPathXmlApplicationContext("draw.xml");
+	    ApplicationContext context=new ClassPathXmlApplicationContext("draw.xml");
 		DrawShape d=(DrawShape)context.getBean("drawShape");
 		
 		
