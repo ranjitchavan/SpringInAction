@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dt" class ="java.util.Date"/>
+<bean id="db" class="com.spring.Test2.DemoBean">
+	<property name="name" value="Ranjit"/>
+	<property name="age" value="21"/>
+	<property name="d" ref="dt"/>
+	<property name="fruits" >
+		<list>
+			<value>apple</value>
+			<value>banna</value>
+			<ref bean="dt"/>
+		</list>
+	</property>
+	<property name="colors">
+	
+		<list>
+			<value>red</value>
+			<value>blue</value>
+			<value>green</value>
+		</list>
+	</property>
+	<property name="phones">
+		<set>
+		<value>9247285621</value>
+		<value>252222</value>
+		<value>1233</value>
+		</set>
+	
+	</property>
+	
+		<property name="faculteis">
+	<map>
+		<entry>
+			<key><value>ranjit</value></key>
+			<value>JAVA </value>
+		</entry>
+		
+		<entry>
+			<key><value>ram</value></key>
+			<value>>NET </value>
+		</entry>
+	</map>
+	</property>
+	
+	
+	<property name="capitals">
+	<props>
+		<prop key="PU">PUNE</prop>
+		<prop key="HYD">HYDRBAD</prop>
+		<prop key="SGI">SANGLI</prop>
+	</props>
+	
+	
+		</property>
+</bean>
+
+
+</beans>

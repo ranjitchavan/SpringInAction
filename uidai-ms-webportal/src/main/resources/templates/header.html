@@ -1,0 +1,132 @@
+
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-header hidden-xs">
+		<a href="index.html" class="navbar-brand"><img alt="Safaram"
+			src="img/logo-safran.png" height="25px" width="150px"></a>
+	</div>
+	<h2
+		class="text-center margin-t-5 margin-b-0 padding-b-5 brd-brd white-text">Management
+		Server Portal</h2>
+	<div class="navbar-header">
+		<button type="button" data-target="#navbarCollapse"
+			data-toggle="collapse" class="navbar-toggle">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span> <span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="menu-bg">
+		<div class="container">
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" style="    margin-left: -16%;">
+					<li class="dropdown"><a href="" data-toggle="dropdown"
+						class="dropdown-toggle "><i class="margin-r-10 fa fa-tasks"></i>Version
+							Management<b class="margin-l-5 caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="currentVersionList.html"><i
+									class="fa fa-bars margin-r-5"></i>Current Version List</a></li>
+							<li><a href="previousVersionList.html"><i
+									class="fa fa-bars margin-r-5"></i>Previous Version List</a></li>
+							<li><a href="addVersion.html"><i
+									class="fa fa-plus margin-r-5"></i>Add Latest Version</a></li>
+							<li><a href="changeCurrentVersion.html"><i
+									class="fa fa-edit margin-r-5"></i>Update Version</a></li>
+						</ul></li>
+
+					<li class="dropdown"><a href="" data-toggle="dropdown"
+						class="dropdown-toggle "><i
+							class="margin-r-10 fa fa-certificate"></i>Certificate Management<b
+							class="margin-l-5 caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="UIDAICertificate.html"><i
+									class="fa fa-certificate margin-r-5"></i>UIDAI Public
+									Certificate</a></li>
+							<li><a href="vendorCertificate.html"><i
+									class="fa fa-bars margin-r-5"></i>Device Provider Certificate
+									List</a></li>
+							<li><a href="addVendorCertificate.html"><i
+									class="fa fa-plus margin-r-5"></i>Add Device Provider
+									Certificate</a></li>
+							<li><a href="deviceLevelKeyRotation.html"><i
+									class="fa fa-key margin-r-5"></i>Key Rotation Device</a></li>
+							<li><a href="customerLevelKeyRotation.html"><i
+									class="fa fa-key margin-r-5"></i>Key Rotation Customer</a></li>
+
+						</ul></li>
+
+
+					<li class="dropdown"><a href="" data-toggle="dropdown"
+						class="dropdown-toggle "><i class="margin-r-10 fa fa-user"></i>User<b
+							class="margin-l-5 caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="activeUserList.html"><i
+									class="fa fa-users margin-r-5"></i>Active Users List</a></li>
+							<li><a href="inActiveUserList.html"><i
+									class="fa fa-users margin-r-5"></i>InActive Users List</a></li>
+							<li><a href="addUser.html"><i
+									class="fa fa-user margin-r-5"></i>Add User</a></li>
+						</ul></li>
+
+					<li class="dropdown"><a href="" data-toggle="dropdown"
+						class="dropdown-toggle "><i class="margin-r-10 fa fa-tasks"></i>Reports<b
+							class="margin-l-5 caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="deviceStatusReport.html">Device Report</a></li>
+							<li><a href="notifyErrorReport.html">Notify Error Report</a></li>
+						</ul></li>
+
+					<li class="dropdown"><a href="" data-toggle="dropdown"
+						class="dropdown-toggle "><i class="margin-r-10 fa fa-user"></i>Device
+							Management<b class="margin-l-5 caret"></b></a>
+						<ul class="dropdown-menu">
+
+
+							<li><a href="importDeviceMaster.html"><i
+									class="margin-r-10 fa fa-database"></i>Import Devices</a></li>
+							<li><a href="addNewCustomer.html"><i
+									class="margin-r-10 fa fa-plus"></i>Add New Customer</a></li>
+							<li><a href="devicePartNumber.html"><i
+									class="margin-r-10 fa fa-plus"></i>Add Device Part-No</a></li>
+							<li><a href="deregister.html"><i
+									class="margin-r-10 fa fa-remove"></i>Un-register Device</a></li>
+							<li><a href="deregisteredDevices.html"><i
+									class="margin-r-10 fa fa-remove"></i>Un-registered Devices List</a></li>
+							<li><a href="importL1HLODevices.html"><i
+									class="margin-r-10 fa fa-database"></i>Import L1HLO Devices</a></li>
+						</ul></li>
+					<li class="dropdown"><a href="" data-toggle="dropdown"
+						class="dropdown-toggle "><i
+							class="margin-r-10 fa fa-certificate"></i>Audit Management<b
+							class="margin-l-5 caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="auditLogs.html"><i
+									class="margin-r-10 fa fa-certificate"></i> Audit Log</a></li>
+						</ul></li>
+
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right margin-r-10">
+
+					<li class="dropdown"><a data-toggle="dropdown" href=""
+						class="dropdown-toggle"><span class="font-17"></span> <span
+							class="font-15 glyphicon glyphicon-cog"></span> </a>
+						<ul role="menu" class="dropdown-menu">
+							<li><a href="changePassword.html" class="dropdown-toggle"><i
+									class="margin-r-10 fa  fa-exchange"></i>Change Password </a></li>
+							<li><a href="#" class="dropdown-toggle" onclick="logout()"><i
+									class="margin-r-10 fa  fa-power-off"></i>Log Out </a></li>
+						</ul></li>
+
+				</ul>
+				<div class="nav navbar-nav navbar-right margin-r-10"
+					style="margin-top: 1.5%;">
+					<span id="loggeduser"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/currentuser.js">
+		
+	</script>
+
+
+</nav>

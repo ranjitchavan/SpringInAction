@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document */
+.margin-t-0 {
+	margin-top: 0
+}
+
+.margin-t-5 {
+	margin-top: 5px
+}
+
+.margin-t-10 {
+	margin-top: 10px
+}
+
+.margin-r-0 {
+	margin-right: 0
+}
+
+.margin-r-5 {
+	margin-right: 5px
+}
+
+.margin-r-10 {
+	margin-right: 10px
+}
+
+.margin-b-0 {
+	margin-bottom: 0
+}
+
+.margin-b-5 {
+	margin-bottom: 5px
+}
+
+.margin-b-10 {
+	margin-bottom: 10px
+}
+
+.margin-l-0 {
+	margin-left: 0
+}
+
+.margin-l-5 {
+	margin-left: 5px
+}
+
+.margin-l-10 {
+	margin-left: 10px
+}
+
+.padding-t-0 {
+	padding-top: 0
+}
+
+.padding-t-5 {
+	padding-top: 5px
+}
+
+.padding-t-7 {
+	padding-top: 7px
+}
+
+.padding-t-10 {
+	padding-top: 10px
+}
+
+.padding-r-0 {
+	padding-right: 0
+}
+
+.padding-r-5 {
+	padding-right: 5px
+}
+
+.padding-r-10 {
+	padding-right: 10px
+}
+
+.padding-r-15 {
+	padding-right: 15px
+}
+
+.padding-b-0 {
+	padding-bottom: 0
+}
+
+.padding-b-5 {
+	padding-bottom: 5px
+}
+
+.padding-b-10 {
+	padding-bottom: 10px
+}
+
+.padding-l-0 {
+	padding-left: 0
+}
+
+.padding-l-5 {
+	padding-left: 5px
+}
+
+.padding-l-10 {
+	padding-left: 10px
+}
+
+.padding-l-15 {
+	padding-left: 15px
+}
+
+.pad-0 {
+	padding: 0px !important
+}
+
+body {
+	padding-top: 90px;
+	background-color: #fff;
+	color: #333
+}
+
+a {
+	color: #4c87c6;
+	text-decoration: none;
+}
+
+.logo-pad {
+	padding-bottom: 5px !important;
+	padding-top: 5px !important;
+}
+
+.font-24 {
+	font-size: 24px
+}
+
+.font-10 {
+	font-size: 10px
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+	.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #f8f8f8;
+	color: #555;
+}
+
+.user {
+	width: 70px;
+	height: 70px;
+	background-color: #fff;
+	border-radius: 24px;
+	font-size: 40px;
+	text-align: left;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 66px;
+}
+
+.user-bg {
+	background-color: #00A858;
+	color: #fff;
+}
+
+.user-bg a {
+	
+}
+
+.fixed-footer {
+	width: 100%;
+	position: fixed;
+	padding: 5px 10px;
+	color: #000;
+	bottom: 0;
+	z-index: 1001;
+	font-size: 11px;
+	border-top: 1px solid #333;
+	background-color: #f1f1f1
+}
+
+.fixed-footer a {
+	color: #000;
+}
+
+.login {
+	margin-top: 20%;
+}
+
+.navbar-nav>li {
+	border-right: 1px solid #29abe2;
+}
+
+.navbar-nav>li:last-child {
+	border-right: 0px solid #ccc;
+}
+
+.navbar-nav li a.active {
+	background-color: #29abe2;
+	color: #fff;
+}
+
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body
+	{
+	background-color: #00c0ef !important;
+}
+/*--widget--*/
+.widget.widget-default {
+	color: #434a54;
+	background-color: #fff;
+}
+
+.widget.widget-padding-sm, .widget.widget-item-icon {
+	padding: 10px 0 5px;
+}
+
+.widget {
+	border-radius: 0;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	color: #fff;
+	float: left;
+	list-style: outside none none;
+	margin: 0 0 20px;
+	min-height: 120px;
+	padding: 15px 10px;
+	position: relative;
+	text-decoration: none;
+	width: 100%;
+}
+
+.widget.widget-item-icon .widget-item-left {
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.widget.widget-item-icon .widget-item-left, .widget.widget-item-icon .widget-item-right
+	{
+	padding: 20px 0;
+	text-align: center;
+	width: 70px;
+}
+
+.widget .widget-item-left {
+	float: left;
+	margin-left: 10px;
+	width: 100px;
+}
+
+.widget.widget-item-icon .widget-data {
+	padding-left: 90px;
+}
+
+.widget .widget-data .widget-title, .widget .widget-data-left .widget-title,
+	.widget .widget-data .widget-subtitle, .widget .widget-data-left .widget-subtitle,
+	.widget .widget-data .widget-int, .widget .widget-data-left .widget-int,
+	.widget .widget-data .widget-big-int, .widget .widget-data-left .widget-big-int
+	{
+	text-align: left;
+}
+
+.widget .widget-int {
+	font-family: arial;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.widget .widget-title, .widget .widget-subtitle, .widget .widget-int,
+	.widget .widget-big-int {
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.widget .widget-title {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.widget .widget-subtitle {
+	color: #eee;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	margin-bottom: 5px;
+}
+
+.widget.widget-default .widget-controls a {
+	border-color: #434a54;
+	color: #434a54;
+}
+
+.widget .widget-controls a.widget-control-right {
+	right: 10px;
+	top: 10px;
+}
+
+.widget .widget-controls a {
+	border: 1px solid #fff;
+	border-radius: 20%;
+	color: #fff;
+	height: 20px;
+	line-height: 17px;
+	opacity: 0.4;
+	position: absolute;
+	text-align: center;
+	transition: all 200ms ease 0s;
+	width: 20px;
+}
+
+.widget .widget-item-left .fa, .widget .widget-item-right .fa, .widget .widget-item-left .glyphicon,
+	.widget .widget-item-right .glyphicon {
+	font-size: 60px;
+}
+
+.breadcrumb {
+	margin-bottom: 5px;
+}
+
+.dataTables_scrollHeadInner, .dataTables_scrollHeadInner table,
+	.dataTables_scrollBody, .dataTables_scrollBody table {
+	width: 100% !important;
+}
+
+.mandatory {
+	color: red;
+}
+
+.brd-brd {
+	border-bottom: 1px solid #4c87c6
+}
+
+.top-brd {
+	border-top: 1px solid #4c87c6
+}
+
+table.dataTable thead th {
+	background-color: #00aeef;
+	color: #fff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #2f7fb8;
+}
+
+.navbar-default {
+	background-color: #29abe2;
+	border-color: #2f7fb8;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.menu-bg {
+	background-color: #8ccbf9;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.active {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #29abe2;
+	color: #fff;
+}
+
+#LoadingDiv {
+	margin: 0px 0px 0px 0px;
+	position: fixed;
+	height: 100%;
+	z-index: 9999;
+	padding-top: 58px;
+	padding-left: 484px;
+	width: 100%;
+	clear: none;
+	
+	/*background-color:#666666;
+	border:1px solid #000000;*/
+}
+/*IE will need an 'adjustment'*/
+* html #LoadingDiv {
+	position: absolute;
+	height
+}
+
+.downloadSignature
+{
+    margin-left: 20px;
+}
+
+.disabledOption{
+	background-color: darkgray;
+}

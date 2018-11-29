@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context = "http://www.springframework.org/schema/context"
+	xmlns:aop = "http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans             
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd         
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-3.0.xsd          
+     http://www.springframework.org/schema/aop         
+     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+     >
+<bean id="lmba1" class="com.demo.test.AspectDemo.advice.ThrowAdviceDemo"/>
+<bean id="lmba2" class="com.demo.test.AspectDemo.advice.MyAdvice"/>
+
+
+<bean id="customerImpl" class="com.demo.test.AspectDemo.CustomerServiceImpl">
+	<property name="name" value="Ranjit"/>
+	<property name="url" value="https://localhost:8080/test"/>
+</bean>
+
+<bean id="csProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="proxyInterfaces">
+	<list>
+			<value>com.demo.test.AspectDemo.CustomerService</value>
+	</list>
+</property>
+<property name="interceptorNames">
+	<list>
+		<value>lmba1</value>
+		<value>lmba2</value>
+		
+	</list>
+</property>
+<property name="target" ref="customerImpl"/>
+</bean>
+</beans>

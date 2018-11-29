@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, shrink-to-fit=no, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Management Server Portal</title>
+<!-- Bootstrap Core CSS -->
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<link href="fontawesome/font-awesome.min.css" rel="stylesheet">
+<link href="css/custome_style.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="css/buttons.dataTables.min.css" rel="stylesheet">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="img/favicon_0.ico"
+	type="image/vnd.microsoft.icon" />
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
+<script src="js/toaster.js"></script>
+
+
+</head>
+<body>
+	<div id="includedContent"></div>
+	<br>
+	<div id="home_wrapper">
+		<div id="page-content-wrapper" style="margin-top: -3%;">
+			<div class="container">
+				<div class="row">
+					<div id="" class="col-lg-12 col-md-12 col-sm-12 ">
+						<div class="col-lg-2 col-md-2 col-sm-2"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 well">
+							<div id="legend">
+								<h4 class="">Current Downloadable Version</h4>
+								<hr>
+							</div>
+							<div class="row" id="alertRow" style="display: none">
+								<div class="col-lg-12 col-md-12 col-sm-12">
+									<div class="form-group col-lg-12 col-md-12 col-sm-12"
+										id="alertContainer"></div>
+								</div>
+							</div>
+							<div class="row">
+								<!-- <form action="" method="" id="changeVersion"> -->
+								<div class="col-lg-12 col-md-12 col-sm-12">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<label for="applicationType" class="control-label">Software
+											Type</label> <span class="mandatory">*</span> <select
+											class="form-control" id="applicationType" required>
+
+										</select>
+
+									</div>
+
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<label for="OS" class="control-label">OS Sub Type</label> <span
+											class="mandatory">*</span><select class="form-control"
+											id="osType" required>
+
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<label for="latestVersion" class="control-label">Select
+											Software Version</label> <span class="mandatory">*</span><select
+											class="form-control" id="versionList" required>
+
+										</select>
+
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6"
+										style="padding-left: 15px !important" id="customerBlock">
+										<label for="SelectCustomer" class="control-label">Select
+											Dp-Id</label> <span class="mandatory">*</span> <select
+											class="form-control" id="SelectCustomer"
+											name="SelectCustomer" required>
+
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12">
+
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<button type="submit" class="btn btn-primary"
+											onclick="updateCurrentVersion()" id="change"
+											value="Change Version">Change Version</button>
+										<button type="submit" class="btn btn-default" id=""
+											onclick="goBack()">Cancel</button>
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6"></div>
+								</div>
+
+								<!-- 								</form>
+ -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2"></div>
+			</div>
+		</div>
+	</div>
+	<!-- /#page-content-wrapper -->
+	<footer class="fixed-footer">
+		<p>&copy; Copyright 2017 @ Management Server - SAFRAN</p>
+	</footer>
+	<!-- /#wrapper -->
+	<!-- jQuery -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/common-util.js"></script>
+
+	<script src="js/changeCurrentVersion.js"></script>
+
+
+	<script>
+		$(function() {
+			$("#includedContent").load("header.html");
+		});
+	</script>
+</body>
+</html>

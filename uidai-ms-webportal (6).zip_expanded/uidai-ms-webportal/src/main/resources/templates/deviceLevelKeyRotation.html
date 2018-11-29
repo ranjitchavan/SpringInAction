@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, shrink-to-fit=no, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Management Server Portal</title>
+<!-- Bootstrap Core CSS -->
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<link href="fontawesome/font-awesome.min.css" rel="stylesheet">
+<link href="css/custome_style.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="css/buttons.dataTables.min.css" rel="stylesheet">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="img/favicon_0.ico"
+	type="image/vnd.microsoft.icon" />
+
+
+<script src="js/jquery.js"></script>
+
+
+
+</head>
+<body>
+	<div id="includedContent"></div>
+	<br>
+	<div id="home_wrapper">
+		<div id="page-content-wrapper" style="    margin-top: -3%;">
+			<div class="container">
+				<div class="row">
+					<div id="" class="col-lg-12 col-md-12 col-sm-12 ">
+						<div class="col-lg-2 col-md-2 col-sm-2"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 well">
+							<div id="legend">
+								<h4 class="">Key Rotation Policy For Devices</h4>
+								<hr>
+							</div>
+
+							<form id="keyRotationForm">
+								<input type="hidden" name="keyRotationId" id="keyRotationId">
+								<div class="row" id="alertRow"
+									style="padding-left: 15px; padding-right: 15px; display: none">
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<div class="form-group col-lg-12 col-md-12 col-sm-12"
+											id="alertContainer"></div>
+									</div>
+								</div>
+
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<div id="legend">
+										<h4 class="">Level 0 Device</h4>
+									</div>
+									<div class="form-group col-lg-2 col-md-2 col-sm-2">
+										<label for="level0" class="control-label">Days<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level0Days"
+											placeholder="Device Level 0" required min="0" max="365">
+									</div>
+									
+									<div class="form-group col-lg-2 col-md-2 col-sm-2">
+										<label for="level0" class="control-label">Hours<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level0Hours"
+											placeholder="Device Level 0" required min="0" max="23">
+									</div>
+									
+									<div class="form-group col-lg-2 col-md-2 col-sm-2">
+										<label for="level0" class="control-label">Min<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level0Mins"
+											placeholder="Device Level 0" required min="0" max="59">
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<label for="reminder" class="control-label">Key
+											Rotation Reminder(before days)<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level0Reminder"
+											placeholder="Key rotation reminder" required min="0"
+											max="364">
+									</div>
+								</div>
+
+
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+								<div id="legend">
+										<h4 class="">Level 1 Device</h4>
+									</div>
+									<div class="form-group col-lg-2 col-md-2 col-sm-2">
+										<label for="level1" class="control-label">Days<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level1Days"
+											placeholder="Device Level 1" required min="0" max="365">
+									</div>
+									<div class="form-group col-lg-2 col-md-2 col-sm-2">
+										<label for="level1" class="control-label">Hours<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level1Hours"
+											placeholder="Device Level 1" required min="0" max="23">
+									</div>
+									<div class="form-group col-lg-2 col-md-2 col-sm-2">
+										<label for="level1" class="control-label">Mins<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level1Mins"
+											placeholder="Device Level 1" required min="0" max="59">
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<label for="reminder" class="control-label">Key
+											Rotation Reminder(before days)<span class="mandatory">*</span>
+										</label> <input type="number" class="form-control" id="level1Reminder"
+											placeholder="Key rotation reminder" required min="0"
+											max="364">
+									</div>
+								</div>
+
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+
+										<input type="submit" class="btn btn-primary margin-r-10"
+											value="Save" id="btnSave">
+										<button type="button" class="btn btn-default" id="btnCancel"
+											onclick="loadContent()">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2"></div>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+	</div>
+	<footer class="fixed-footer">
+		<p>&copy; Copyright 2017 @ Management Server - SAFRAN</p>
+	</footer>
+	<!-- /#wrapper -->
+	<!-- jQuery -->
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/devicelevel-keyrotation.js"></script>
+	<script type="text/javascript" src="js/common-util.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+
+	<script>
+		//--for toggle menu--//
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+
+	<script>
+		$(function() {
+			$("#includedContent").load("header.html");
+		});
+	</script>
+
+</body>
+</html>

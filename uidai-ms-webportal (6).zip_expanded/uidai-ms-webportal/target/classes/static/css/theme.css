@@ -1,0 +1,99 @@
+.margin-t-0 { margin-top: 0 }
+.margin-t-5 { margin-top: 5px }
+.margin-t-10 { margin-top: 10px }
+.margin-t-20 { margin-top: 20px }
+.margin-t-min20{margin-top: -20px;}
+.margin-r-0 { margin-right: 0 }
+.margin-r-5 { margin-right: 5px }
+.margin-r-10 { margin-right: 10px }
+.margin-b-0 { margin-bottom: 0 }
+.margin-b-5 { margin-bottom: 5px }
+.margin-b-10 { margin-bottom: 10px }
+.margin-l-0 { margin-left: 0 }
+.margin-l-5 { margin-left: 5px }
+.margin-l-10 { margin-left: 10px }
+.padding-t-0 { padding-top: 0 }
+.padding-t-5 { padding-top: 5px }
+.padding-t-10 { padding-top: 10px }
+.padding-r-0 { padding-right: 0 }
+.padding-r-5 { padding-right: 5px }
+.padding-r-10 { padding-right: 10px }
+.padding-r-15 { padding-right: 15px }
+.padding-b-0 { padding-bottom: 0 }
+.padding-b-5 { padding-bottom: 5px }
+.padding-b-10 { padding-bottom: 10px }
+.padding-b-45 { padding-bottom: 45px }
+.padding-b-20per { padding-bottom: 20% }
+.padding-b-20-5per { padding-bottom: 20.5% }
+.padding-l-0 { padding-left: 0 }
+.padding-l-5 { padding-left: 5px }
+.padding-l-10 { padding-left: 10px }
+.padding-l-15 { padding-left: 15px }
+.pad-0 { padding: 0px !important }
+html{height:100%}
+/*--login--*/
+.login-bg{background:url(../img/login-bg.png) no-repeat center; background-size: cover;}
+.login-form{background-color:#E6E6E6;margin-top:12.5%;}
+.icon-bg{background-color:#999; color:#fff;}
+ul.user-links > li > a{color:#fff !important;}
+.menu-bg{background-color: #8CCBF9}
+.divider{border-bottom:1px solid #fff;}
+ul.navbar-center {display: inline-block; float: none;text-align: center;width:100%;}
+.navbar-center li { display: inline-block; float: none;}
+@media (max-width:767px){
+	.navbar-center{margin-left: 0px; padding-left: 0px}
+	.navbar-center, .navbar-center li{float:none; text-align: left;display: block;}
+}
+.subNav-toggle{boeder:1px solid red;}
+.subNav-toggle-active{ display:block !important;}
+.panel-heading.active { background-color: #29ABE2;color:#fff; text-decoration:none;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #29ABE2;
+  border-color: #ddd #ddd transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  cursor: default;
+}
+.activate { background-color: #29ABE2;color:#fff; text-decoration:none;}
+.cursor-pointer{cursor:pointer;}
+.required{color:red;}
+.form-control{color: #666666}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.nav-tabs > li > a{border-color:#999;}
+.fontSize{font-size: 100%}
+.dropdown-menu{min-width:auto;}
+.dropdown-menu li{display:inline-block;width:100%}
+/* --for home page-- */
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body { background-color: #00c0ef;color: #fff }
+.small-box > .inner {padding: 10px;}
+.small-box .icon {  color: rgba(0, 0, 0, 0.15);  font-size: 90px;  position: absolute;  right: 20px;  top: -10px;  transition: all 0.3s linear 0s;  z-index: 0;}
+.small-box > .small-box-footer {  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;  color: rgba(255, 255, 255, 0.8);  display: block;  padding: 3px 0;
+  position: relative;  text-align: center;  text-decoration: none;  z-index: 10;}
+.small-box h3 {font-size: 38px; font-weight: bold; margin: 0 0 10px; padding: 0; white-space: nowrap;}
+
+.bg-green, .callout.callout-success,.label-success, .modal-success .modal-body {background-color: #00a65a; color:#fff}
+.bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body { background-color: #f39c12; color:#fff}
+.bg-red, .callout.callout-danger, .alert-error, .label-danger, .modal-danger .modal-body {background-color: #dd4b39; color:#fff}
+.nav > li, .nav > li > a {display: inline-block; position: relative;}
+.footerContent{color:#fff; padding:10px; font-size:12px;}
+.scrollableDiv{max-height: 500px;overflow: auto;}
+
+.dropdown-menu{margin:0 !important;}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }

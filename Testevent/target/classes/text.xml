@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="eventStart" class="com.db.test.Testevent.BeanEventStart"/>
+	<bean id="eventEnd" class="com.db.test.Testevent.BeanEventEnd"/>
+	
+	<bean id="life" class="com.db.test.Testevent.DemoBean" init-method="myInit" destroy-method="destroy"></bean>
+</beans>
