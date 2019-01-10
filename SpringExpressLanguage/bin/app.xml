@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context = "http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+   
+   ">
+	
+	<bean id="student" class="com.spl.demo.Student">
+		<property name="id" value="#{4+4}"/>
+		<property name="name" value="#{T(java.lang.String).valueOf('Ranjit')}"/>
+		<property name="marks" value="#{T(java.lang.Double).parseDouble('79.25')}"/>
+		<!-- <property name="nullEr" value="#{'Ranjit'}"/> -->
+		<property name="city" value="#{citeList.![name+' '+state]}"/>
+		
+	</bean>
+		<!-- <bean id="s" class="com.spl.demo.TestNull">
+			<property name="sam" value="#{student.nullEr?.toUpperCase()}"/>
+			<property name="bool" value="#{not true  eq false}"/>
+		</bean> -->
+	
+		<util:list id="citeList">
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli1" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+			
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli2" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+			
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli3" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+			
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli4" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+			
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli5" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+			
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli6" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+			
+			<bean class="com.spl.demo.City" 
+			p:name="Sangli7" p:pincode="416406" p:state="MH" p:cou="INDIA"/>
+		</util:list>
+		
+	<context:component-scan base-package="com.sql.demo"></context:component-scan>
+	<context:annotation-config></context:annotation-config>
+</beans>

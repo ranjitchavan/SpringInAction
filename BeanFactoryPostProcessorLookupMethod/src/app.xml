@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="cusBo" class="CustomerBo">
+	<property name="id" value="1" />
+	<property name="name" value="Ranjit"/>
+	<property name="custId" value="11"/>
+	<property name="custBuss" value="STARK"/>
+	<!-- <property name="doj" ref="dob"/> -->
+</bean>
+<bean id="stuBo" class="StudentBO">
+	<property name="id" value="11" />
+	<property name="name" value="RanjitStudent"/>
+	<property name="clgName" value="ADCET"/>
+	<property name="rollNo" value="007"/>
+	<!-- <property name="doj" ref="dob"/>
+	 -->
+</bean>
+<bean id="dob"  class="java.util.Date"/>
+<bean id="post" class="BaseBoBeanPostProcessor"/>
+</beans>

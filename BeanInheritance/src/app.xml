@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pointA" class="Point" scope="prototype">
+		<constructor-arg index="0" value="10"/>
+		<constructor-arg index="1" value="5"/>
+	</bean>
+	
+	<bean id="pointB" class="Point" scope="prototype">
+		<constructor-arg index="0" value="15"/>
+		<constructor-arg index="1" value="20"/>
+	</bean>
+	
+	<bean id="pointC" class="Point" scope="singleton">
+	
+		<constructor-arg index="0" value="7"/>
+		<constructor-arg index="1" value="3"/>
+	</bean>
+
+
+	<bean id="triangle" class="Triangle" scope="singleton">
+		<constructor-arg index="0" ref="pointA"/>
+		<constructor-arg index="1" ref="pointB"/>
+		<constructor-arg index="2" ref="pointC"/>
+	</bean>
+
+</beans>

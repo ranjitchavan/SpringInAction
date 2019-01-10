@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context = "http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	 xmlns:aop = "http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context-3.0.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+  http://www.springframework.org/schema/aop 
+  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd 
+  ">
+	<aop:config>
+			<aop:pointcut id="point1" expression="execution(* com.ranjit.bo.Jack.*(..))"/>
+			<aop:pointcut id="point2" expression="execution(* com.ranjit.bo.*.*(..))"/>
+		
+		<aop:aspect id="logAspect" order="1" ref="around">
+			<aop:around pointcut-ref="point2" method="getProcessedJack"/>
+			<aop:around pointcut-ref="point2" method="getProcessedMick"/>
+			
+		</aop:aspect>
+		
+		<aop:aspect id="afterA" order="1" ref="after">
+			<aop:after pointcut-ref="point1" method="after"/>
+			<aop:after pointcut-ref="point2" method="after"/>
+		</aop:aspect>
+		<aop:aspect id="afterThro" order="1" ref="afterReturn">
+			<aop:after-returning pointcut-ref="point1" method="afterReturn" returning="l"/>
+			<aop:after-returning pointcut-ref="point1" method="afterReturn" returning="l"/>
+		</aop:aspect>
+		<aop:aspect id="beforeA" order="2" ref="before">
+			<aop:before pointcut-ref="point1" method="before"/>
+			<aop:before pointcut-ref="point2" method="before"/>
+		</aop:aspect>
+		<aop:aspect id="beforeB" order="1" ref="before2">
+			<aop:before pointcut-ref="point1" method="before"/>
+			<aop:before pointcut-ref="point2" method="before"/>
+		</aop:aspect>
+		<aop:aspect id="t" order="1" ref="throwingAspect">
+			<aop:after-throwing pointcut-ref="point1" method="throwMe" throwing="ae"/>
+		
+		</aop:aspect>
+	</aop:config>
+	
+	<context:component-scan base-package="com.ranjit.bo"></context:component-scan>
+	<context:annotation-config></context:annotation-config>
+</beans>
